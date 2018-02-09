@@ -1,0 +1,24 @@
+<article class="member h-member">
+  <header class="member-header">
+    <h4 class="member-name p-name">{{ team_member.name }}</h3>
+    {%- assign member_picture = team_member.picture | default: '/images/bio-photo.jpg' | relative_url -%}
+    <img class="member-image u-photo" src="{{ member_picture }}" alt="">
+  </header>
+    <section class="member-bio p-summary">
+      {% if team_member.bio %}
+        {{ team_member.bio | markdownify }}
+      {% endif %}
+    </section>
+  <footer class="member-meta">
+        {%- for link in team_member.links -%}
+          {%- if link.url contains "://" -%}
+            {%- assign url = link.url -%}
+          {%- else -%}
+            {%- assign url = link.url | relative_url -%}
+          {%- endif -%}
+          <li class="author-link">
+            <a class="u-url" rel="me" href="{{ url }}"><i class="{{ link.icon | default : 'fas fa-link' }} fa-lg" title="{{ link.title }}"></i></a>
+          </li>
+        {%- endfor -%}
+  </footer>
+</article>

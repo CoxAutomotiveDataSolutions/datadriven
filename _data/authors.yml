@@ -1,0 +1,15 @@
+# Authors
+
+Alex Bush:
+  name: Alex Bush
+  picture: /images/alexbush.jpg
+  team: Data Engineering
+  bio: A cool guy
+  links:
+    - title: Github
+      url: https://github.com/bushnoh
+      icon: fab fa-github-square
+
+David Asboth:
+  name: David Asboth
+  team: Data Science

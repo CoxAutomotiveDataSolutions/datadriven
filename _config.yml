@@ -1,0 +1,100 @@
+#theme: jekyll-theme-so-simple
+#remote_theme: mmistakes/so-simple-theme
+
+locale: en-GB
+title: "Data Driven"
+name: Cox Automotive Data Solutions
+description: "A Cox Automotive Data Solutions Blog"
+baseurl: ""
+url: ""
+
+logo: "/images/coxautodata.png"
+
+date_format: "%B %-d, %Y"
+read_time: true
+words_per_minute: # 200
+mathjax: true
+
+google_fonts:
+  - name: "Open Sans"
+    weights: "400,400i,700,700i"
+  - name: "Roboto Slab"
+    weights: "400,400i,700,700i"
+  - name: "Source Code Pro"
+    weights: "400,400i,700,700i"
+
+disqus:
+  shortname: "coxautodata"
+
+twitter:
+  username: "coxautomotiveuk"
+
+#google_analytics: 
+#google_site_verification: 
+
+# Liquid
+liquid:
+  error_mode: strict
+
+# Build settings
+permalink: /:categories/:title/
+markdown: kramdown
+feed:
+  path: atom.xml
+
+# Pagination - https://jekyllrb.com/docs/pagination/
+paginate: 10
+paginate_path: /page:num/
+
+# Search
+search_full_content: false
+
+# Taxonomoy pages
+category_archive_path: "/categories/#"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-redirect-from
+
+# Collections
+collections:
+  talks:
+    output: true
+    permalink: /:collection/:path/
+
+# Front Matter Defaults
+defaults:
+  # Post defaults
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      comments: true
+      share: true
+  # Talks defaults
+  - scope:
+      path: "_talks"
+      type: talks
+    values:
+      layout: reveal
+
+# Site Author
+author:
+  name: CoxAuto Data Solutions
+  picture: /images/coxautodatasq.png
+
+# Footer Links
+footer_links:
+  - title: Twitter
+    url: https://twitter.com/coxautomotiveuk
+    icon: fab fa-twitter-square
+  - title: GitHub
+    url: https://github.com/CoxAutomotiveDataSolutions
+    icon: fab fa-github-square
+  - title: Feed
+    url: atom.xml
+    icon: fas fa-rss-square

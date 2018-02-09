@@ -1,0 +1,20 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+sitemap: false
+---
+
+@charset "utf-8";
+
+
+$nav-background-color: #005088;
+$base-color: #005088;
+$text-color: #45555f;
+$accent-color: #005088;
+$site-logo-width: 168px;
+$site-logo-height: 86px;
+
+$serif-font-family: "Roboto Slab", serif;
+$sans-serif-font-family: "Open Sans", sans-serif;
+$monospace-font-family: "Source Code Pro", Menlo, Consolas, Monaco, "Courier New", Courier, monospace;
+
+@import "so-simple";

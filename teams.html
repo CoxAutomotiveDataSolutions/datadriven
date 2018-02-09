@@ -1,0 +1,48 @@
+---
+layout: page
+title: "Teams"
+description: "Page not found."
+sitemap: true
+permalink: /teams.html
+---
+
+{% capture teams -%}
+  {%- for member in site.data.authors -%}
+    {{ member[1].team }};
+  {%- endfor -%}
+{%- endcapture %}
+{% assign sortedteams = teams | split:';' | sort | uniq %}
+
+{% for team in sortedteams %}
+<h3 id="{{ team | slugify | downcase }}" >{{ team }}</h3>
+<div class="member-grid">
+  {% for member in site.data.authors %}
+    {% if member[1].team == team %}
+      {% assign team_member = member[1] %}
+      {% include member.html %}
+    {% endif %}
+  {% endfor %}
+{% assign count = 0 %}
+{% for entry in site.posts %}
+  {% if site.data.authors[entry.author].team == team %}
+    {% assign count = count | plus: 1 %}
+  {% endif %}
+{% endfor %}
+</div>
+<a href="#{{ team | slugify | downcase }}_posts">{{ team }} posts ({{ count }})</a>
+<hr>
+{% endfor %}
+
+{% for team in sortedteams %}
+      <section id="{{ team | slugify | downcase }}_posts" class="taxonomy-section">
+        <h2 class="taxonomy-title">{{ team }}</h2>
+        <div class="entries-grid">
+          {% for entry in site.posts %}
+            {% if site.data.authors[entry.author].team == team %}
+              {% include entry.html %}
+            {% endif %}
+          {% endfor %}
+        </div>
+        <a href="#page-title" class="back-to-top">{{ site.data.text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+      </section>
+{% endfor %}
