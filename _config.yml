@@ -5,7 +5,7 @@ locale: en-GB
 title: "Data Driven"
 name: Cox Automotive Data Solutions
 description: "A Cox Automotive Data Solutions Blog"
-baseurl: "/datadriven"
+baseurl: "/"
 url: "https://bushnoh.github.io"
 
 logo: "/images/coxautodata.png"
