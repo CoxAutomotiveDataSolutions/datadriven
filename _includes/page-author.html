@@ -3,14 +3,12 @@
 {%- assign team = author.team | default: "Uncategorised" -%}
 
 <div class="page-author h-card p-author">
-  {%- if author.picture -%}
     {%- if author.picture contains "://" -%}
       {%- assign author_picture = author.picture -%}
     {%- else -%}
-      {%- assign author_picture = author.picture | relative_url -%}
+      {%- assign author_picture = author.picture | default: '/images/bio-photo.jpg' | relative_url -%}
     {%- endif -%}
     <img src="{{ author_picture }}" class="author-avatar u-photo" alt="{{ author.name }}">
-  {%- endif -%}
 
   <div class="author-info">
     {%- if author.name -%}
