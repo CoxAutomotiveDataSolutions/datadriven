@@ -16,5 +16,6 @@ $site-logo-height: 86px;
 $serif-font-family: "Roboto Slab", serif;
 $sans-serif-font-family: "Open Sans", sans-serif;
 $monospace-font-family: "Source Code Pro", Menlo, Consolas, Monaco, "Courier New", Courier, monospace;
+$bg-image: "{{ '/images/line-chart-bg.png' | relative_url }}";
 
 @import "so-simple";

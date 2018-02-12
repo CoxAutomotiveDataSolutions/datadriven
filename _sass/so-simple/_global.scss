@@ -81,7 +81,7 @@
 }
 
 .cox-header {
-  background-image: url({{ '/images/line-chart-bg.png' | relative_url }});
+  background-image: url($bg-image);
   min-height: 150px;
   display: flex;
   flex-direction: column;
