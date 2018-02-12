@@ -1,5 +1,26 @@
 # Data Driven - A Cox Automotive Data Solutions Blog
 
+## Building
+
+To build locally, you can do the following:
+
+```
+# Install Ruby (>2.1.0)
+curl -L get.rvm.io | bash -s stable
+
+# Install bundler
+gem install bundler
+
+# Checkout repo and cd into directory
+git clone https://github.com/CoxAutomotiveDataSolutions/datadriven.git && cd datadriven
+
+# Install packages (includes Jekyll)
+bundle install
+
+# Start Jekyll. This will automatically rebuild when changes are made.
+jekyll serve -w
+```
+
 ## Updating
 
 ### Adding a member
