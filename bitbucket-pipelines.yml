@@ -10,7 +10,7 @@ pipelines:
             - bundle install
             - gem install html-proofer
             - bundle exec jekyll build -d _site/datadriven/
-            - htmlproofer ./_site --url-ignore "/#.*/" --file-ignore /datadriven/reveal.js/
+            - export LANG="C.UTF-8" && htmlproofer ./_site --url-ignore "/#.*/" --file-ignore /datadriven/reveal.js/
   branches:
     master:
       - step:
