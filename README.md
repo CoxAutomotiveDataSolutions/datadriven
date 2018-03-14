@@ -14,11 +14,25 @@ gem install bundler
 # Checkout repo and cd into directory
 git clone https://github.com/CoxAutomotiveDataSolutions/datadriven.git && cd datadriven
 
+# Checkout the revealjs repo
+git submodule init
+git submodule update
+
 # Install packages (includes Jekyll)
 bundle install
 
 # Start Jekyll. This will automatically rebuild when changes are made.
 jekyll serve -w
+```
+
+### Testing
+
+You can test the build for errors locally by running the following:
+
+```
+gem install html-proofer
+bundle exec jekyll build -d _site/datadriven/
+htmlproofer ./_site --url-ignore "/#.*/" --file-ignore /datadriven/reveal.js/
 ```
 
 ## Updating
