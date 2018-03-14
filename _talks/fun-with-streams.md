@@ -2,8 +2,6 @@
 title: "Fun with Scala Streams"
 authors:
  - Alex Bush
- - Alex Bush
- - Alex Bush
 image:
   path: /images/streams.png
   thumbnail: /images/streams.png
