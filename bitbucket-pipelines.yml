@@ -3,6 +3,7 @@ pipelines:
     build:
       - step:
           name: Test the build
+          image: ruby:latest
           script:
             - git submodule init
             - git submodule update
