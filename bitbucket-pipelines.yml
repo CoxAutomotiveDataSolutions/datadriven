@@ -10,6 +10,7 @@ pipelines:
     master:
       - step:
           name: Deploy to Github repo
+          deployment: production
           script:
             - git remote add github $GITHUB_REPO_URL
             - git push github $GITHUB_REPO_BRANCH
