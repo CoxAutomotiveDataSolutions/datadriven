@@ -2,7 +2,7 @@
   <header class="member-header">
     <h4 class="member-name p-name">{{ team_member.name }}</h3>
     {%- assign member_picture = team_member.picture | default: '/images/bio-photo.jpg' | relative_url -%}
-    <img class="member-image u-photo" src="{{ member_picture }}" alt="">
+    <img class="member-image u-photo" src="{{ member_picture }}" alt="{{ team_member.name }}">
   </header>
     <section class="member-bio p-summary">
       {% if team_member.bio %}
