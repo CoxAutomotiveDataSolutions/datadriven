@@ -12,4 +12,14 @@ Alex Bush:
 
 David Asboth:
   name: David Asboth
+  picture: /images/davidasboth.jpg
+  team: Data Science
+  bio: Data Scientist, former Software Developer, occasional content creator
+  links:
+    - title: Twitter
+      url: https://twitter.com/davidasboth
+      icon: fab fa-twitter-square
+
+Michael O'Rourke:
+  name: Michael O'Rourke
   team: Data Science
