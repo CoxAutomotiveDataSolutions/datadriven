@@ -5,8 +5,8 @@ author: Daniel Timar
 image:
   thumbnail: /images/time_of_day.jpg
 categories: [Data Science]
+excerpt: "Working with [Manheim](https://www.manheim.co.uk), a Cox Automotive brand that provides [vehicle auctions](https://www.manheim.co.uk/our-services/auction-services), [inspections](https://www.manheim.co.uk/our-services/vehicle-solutions/inspection-services), [transport](https://www.manheim.co.uk/our-services/vehicle-solutions/transport) and [reconditioning](https://www.manheim.co.uk/our-services/vehicle-solutions/reconditioning), we are often asked about the potential effect of certain attributes of vehicles on the final sale price."
 ---
- 
 Working with [Manheim](https://www.manheim.co.uk), a Cox Automotive brand that provides [vehicle auctions](https://www.manheim.co.uk/our-services/auction-services), [inspections](https://www.manheim.co.uk/our-services/vehicle-solutions/inspection-services), [transport](https://www.manheim.co.uk/our-services/vehicle-solutions/transport) and [reconditioning](https://www.manheim.co.uk/our-services/vehicle-solutions/reconditioning), we are often asked about the potential effect of certain attributes of vehicles on the final sale price. For example:
 
 * How much more money do cars with MOT or Service Book sell for than those without? 
