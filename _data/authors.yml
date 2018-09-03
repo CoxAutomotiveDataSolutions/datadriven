@@ -7,7 +7,7 @@ Alex Bush:
   bio: A Hadoop specialist with a penchant for DevOps practices
   links:
     - title: Github
-      url: https://github.com/bushnoh
+      url: https://github.com/alexjbush
       icon: fab fa-github-square
 
 Vicky Avison:
@@ -28,3 +28,9 @@ David Asboth:
 Michael O'Rourke:
   name: Michael O'Rourke
   team: Data Science
+
+Daniel Timar: 
+  name: Daniel Timar
+  picture: /images/danieltimar.jpg
+  team: Business Intelligence
+  bio: Analyst
