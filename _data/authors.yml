@@ -1,5 +1,11 @@
 # Authors
 
+Vicky Avison:
+  name: Vicky Avison
+  bio: Lead Data Engineer
+  team: Data Engineering
+  picture: /images/vicky_avison.png
+
 Alex Bush:
   name: Alex Bush
   picture: /images/alexbush.jpg
@@ -9,11 +15,6 @@ Alex Bush:
     - title: Github
       url: https://github.com/alexjbush
       icon: fab fa-github-square
-
-Vicky Avison:
-  name: Vicky Avison
-  team: Data Engineering
-  picture: /images/vicky_avison.jpg
 
 David Asboth:
   name: David Asboth
